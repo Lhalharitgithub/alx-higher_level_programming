@@ -3,7 +3,7 @@ import sys
 
 
 def safe_print_integer_err(value):
-    """It Writez a function that printz an integer."""
+    """function that printz an integer."""
     
     try:
         print("{:d}".format(value))
