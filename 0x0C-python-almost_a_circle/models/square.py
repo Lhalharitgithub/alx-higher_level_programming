@@ -32,16 +32,16 @@ class Square(Rectangle):
 
         Args:
             *args (ints): New attribute values.
-                - 1st argument representz id attribute
-                - 2nd argument representz size attribute
-                - 3rd argument representz x attribute
-                - 4th argument representz y attribute
+                - 1st argument == id attribute
+                - 2nd argument == size attribute
+                - 3rd argument == x attribute
+                - 4th argument == y attribute
             **kwargs (dict): New key/value pairs of attributes.
         """
-        if args and len(args) != 0:
-            a = 0
+        if args and len(args) != (0):
+            a = (0)
             for arg in args:
-                if a == 0:
+                if a == (0):
                     if arg is None:
                         self.__init__(self.size, self.x, self.y)
                     else:

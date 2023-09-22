@@ -100,17 +100,17 @@ class Rectangle(Base):
 
         Args:
             *args (ints): New attribute values.
-                - 1st argument represents id attribute
-                - 2nd argument represents width attribute
-                - 3rd argument represent height attribute
-                - 4th argument represents x attribute
-                - 5th argument represents y attribute
+                - 1st argument == id attribute
+                - 2nd argument == width attribute
+                - 3rd argument == height attribute
+                - 4th argument == x attribute
+                - 5th argument == y attribute
             **kwargs (dict): New key/value pairs of attributes.
         """
-        if args and len(args) != 0:
-            a = 0
+        if args and len(args) != (0):
+            a = (0)
             for arg in args:
-                if a == 0:
+                if a == (0):
                     if arg is None:
                         self.__init__(self.width, self.height, self.x, self.y)
                     else:
